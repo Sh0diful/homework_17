@@ -1,12 +1,20 @@
-h1 {
-    color: #4d1111;
-    font-size: 20px;
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: left;
+    justify-items: left;
+    font-family: helvetica, arial, sans-serif;
+    color: rgb(211, 46, 46);
+    grid-template-areas:
+    "hover"
+    "disabled"
 }
-h2 {
-    color: #e42c2c;
-    font-size: 15px;
-    background-color: #114d16;
-}
-/* h1 {
 
-} */
+.hoverMe {
+    grid-area: hover;
+    color: 775E30;
+    width: 100px;
+    height: 50;
+    transition: background-color 0.3s ease;
+}
