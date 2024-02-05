@@ -2,44 +2,62 @@ h1 {
     color: #4d1111;
     font-size: 20px;
 }
+
 h2 {
     color: #e42c2c;
     font-size: 15px;
     background-color: #114d16;
 }
+
 /* h1 {
 
 } */
 
 .container {
     position: relative;
-    width:200%;
-  }
-  
-  .image {
+    width: 200%;
+}
+
+img {
     display: block;
     width: 100%;
     height: auto;
-  }
-  
-  .overlay {
+}
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.small {
+width: 25%;
+
+}
+
+#s {
+ width: 80px;
+height: 90px;
+display: flex; 
+padding-bottom: 50px;
+
+}
+.overlay {
     position: absolute;
     bottom: 0;
-    left: 100%;
+    left: 60%;
     right: 0;
- 
+
     overflow: hidden;
     width: 0;
     height: 100%;
-    transition: .5s ease;
-  }
-  
-  .container:hover .overlay {
+    transition: .5s ease-in-out;
+}
+
+.container:hover .overlay {
     width: 100%;
     left: 0;
-  }
-  
-  .text {
+}
+
+.text {
     color: white;
     font-size: 20px;
     position: absolute;
@@ -49,4 +67,34 @@ h2 {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     white-space: nowrap;
+}
+
+/* welcome button */
+
+button {
+    background-color: #ffff;
+    border: none;
+    color: #775E30;
+    padding: 15px 32px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button {
+    transition-duration: 0.4s;
+  }
+  
+  .button:hover {
+    background-color: #ffffff; /* Green */
+    color: #271F10;
+  }
+
+  .flex-end {
+    display: flex; 
+    justify-content: flex-end;
+
   }
