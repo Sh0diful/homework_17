@@ -1,0 +1,30 @@
+body {
+    background-image: url("images/swatch\ 1.png");
+    background-color: #fff;
+   }
+  
+
+  nav {
+    list-style-type: none;
+    margin: 10px;
+    padding: 50px;
+  }
+  #logoLeft {
+    height: 10px;
+    padding-right: 200px;
+  }
+  /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    align-items: flex-start;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    float: right;
+   
+    align-items: flex-end;
+    justify-content: left;
+  }
