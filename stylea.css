@@ -1,12 +1,18 @@
-h1 {
-    color: #4d1111;
-    font-size: 20px;
-}
 
-h2 {
-    color: #e42c2c;
-    font-size: 15px;
-    background-color: #114d16;
+/* background  */
+
+body {
+  /* Background color */
+  background-color: #f0f0f0; /* Light gray */
+
+  /* Background image */
+  background-image: url('images/swatch\ 1.png');
+  /* Set background image to cover entire viewport */
+  background-size: cover;
+  /* Position the background image at the center */
+  background-position: center;
+  /* Ensure that background image is fixed and doesn't scroll with content */
+  background-attachment: fixed;
 }
 
 /* h1 {
@@ -17,7 +23,6 @@ h2 {
     position: relative;
     width: 50%;
 }
-
 .image {
     display: block;
     width: 100%;
@@ -109,8 +114,7 @@ button {
   .dropdown {
     float: left;
     overflow: hidden;
-    display: grid;
-    justify-content: end;
+    
   }
   
   .dropdown .dropbtn {
@@ -129,6 +133,7 @@ button {
   }
   
 .fullcontact:hover {
+ 
     background-image: url("images/Contact_image.png");
     background-repeat: no-repeat;
     width: 100%;
@@ -139,16 +144,17 @@ button {
   
   .dropdown-content {
     display: none;
-
+    position: absolute;
     background-image: url("images/swatch_1\ 1.png");
+    background-color: #FFF8EA;
     width: 100%;
-
+    left: 0;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
   
   .dropdown-content .header {
-    
+   
     padding: 16px;
     color: white;
   }
@@ -157,3 +163,73 @@ button {
     display: block;
   }
   
+  
+    /* CSS for the frame */
+    .frame {
+      
+      width: 1000px; /* Adjust width as needed */
+      height: 500px; /* Adjust height as needed */
+      border: 2px solid #333; /* Border color and thickness */
+      padding: 30px; /* Padding inside the frame */
+      margin: 50px auto; /* Center the frame horizontally */
+      box-sizing: border-box; /* Include padding and border in element's total width and height */
+    }
+  
+    /* CSS for the content inside the frame */
+    .content {
+    
+      font-family: Arial, sans-serif;
+      color: #333;
+      text-align: center;
+    }
+
+     /* CSS for the image */
+  .box img {
+    width: 100%; /* Make the image fill the entire box */
+    height: 100%; /* Make the image fill the entire box */
+    object-fit: cover; /* Ensure the image covers the entire box */
+    position: absolute; /* Position the image relative to the box */
+    top: 0; /* Position the image at the top */
+    left: 0; /* Position the image at the left */
+    animation: moveImage 5s linear infinite; /* Apply animation */
+
+  }
+
+    /* Keyframes for moving the image */
+    @keyframes moveImage {
+      0% {
+        left: 0; /* Start position */
+      }
+      100% {
+        left: calc(100% - 100px); /* End position */
+      }
+    }
+
+  /* CSS for the content */
+  .content {
+    position: relative; /* Create a new positioning context */
+    z-index: 1; /* Ensure content is above the image */
+    padding: 20px;
+  }
+
+  .content h1 {
+    margin-top: 0; /* Remove default margin for h1 */
+  }
+
+    /* CSS for the box */
+    .box {
+      width: 1000px; /* Adjust width as needed */
+      height: 500px; /* Adjust height as needed */
+      background-color: #FFF8EA; /* Background color of the box */
+      border: 2px solid #333; /* Border color and thickness */
+      padding: 20px; /* Padding inside the box */
+      margin: 50px auto; /* Center the box horizontally */
+      box-sizing: border-box; /* Include padding and border in element's total width and height */
+    }
+  
+    /* CSS for the content inside the box */
+    .content {
+      font-family: Arial, sans-serif;
+      color: #333;
+      text-align: left;
+    }
