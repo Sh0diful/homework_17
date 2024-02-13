@@ -10,7 +10,7 @@ function toggleFooter() {
     
     // If the background color is white, change it to light blue; otherwise, change it to white
     if (currentColor === '' || currentColor === 'white') {
-      box.style.backgroundColor = 'lightblue';
+      box.style.backgroundColor = '#775E30';
     } else {
       box.style.backgroundColor = 'white';
     }
