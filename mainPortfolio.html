@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="stylea.css">
+    <!-- <img src="small.jpg" srcset="medium.jpg 800w, large.jpg 1600w" alt="Responsive Image"> -->
+
     
-<script src="script.js"></script>
+
 </head>
 <body>
   <div class="content">
@@ -25,20 +27,25 @@
           <div class="dropdown-content">
             <div class="header">
             
-            </div>   
+          </div>   
             <div class="row">
-              <div class="column">
-                <h3></h3>
+              <div class="column">         
+                <h3>About Me</h3>
              
-              </div>
+              </div> 
               <div class="column">
-                <h3></h3>
+                <h3>Skills</h3>
             
               </div>
               <div class="column">
-                <h3></h3>
+                <h3>Projects</h3>
               
               </div>
+            </div>
+            <div class="column">
+              <h3>Contacts</h3>
+            
+            </div>
             </div>
           </div>
         </div> 
@@ -48,17 +55,35 @@
 
       <!-- frame -->
 
-      <body>
+      
+<!-- buttons -->
 
+<div id="box1" class="boxs" onclick="toggleBackgroundColor('box1')">
+  <h2>Box 1</h2>
+  <p>This is box 1.</p>
+</div>
+
+<div id="box2" class="boxs" onclick="toggleBackgroundColor('box2')">
+  <h2>Box 2</h2>
+  <p>This is box 2.</p>
+</div>
+
+<div id="box3" class="boxs" onclick="toggleBackgroundColor('box3')">
+  <h2>Box 3</h2>
+  <p>This is box 3.</p>
+</div>
+
+<!-- frame -->
         <div class="frame">
           <div class="content">
-            <img src="images/me_small.png" alt="me">
+          
             <h1>Welcome</h1>
             <h2>My name is Shadi Ghandehari</h2>
             <p>A designer who specializes in fashion, graphics, Adobe Suite, VS Code and 
               UX/UI design.</p>
 
           </div>
+          <div>  <img src="images/me_small.png" alt="me"> </div>
         </div>
 
         <img src="images/about_me.png" alt="meSection">
@@ -74,10 +99,12 @@
         </div>
         </div>
 
-<img src="images/designs.png" alt="meSection">
+<div><img src="images/designs.png" alt="meSection"></div>
+
 
          <!-- box-work -->
-         <div class="boxWork">
+         <div class="workProjects">
+         <div class="boxWork1">
           <div class="content">
             <img src="" alt="meSection">
             <h1>Box Example</h1>
@@ -91,7 +118,21 @@
             <p>This is a simple box created using HTML and CSS.</p>
           </div>
         </div>
-
+        <div class="boxWork1">
+          <div class="content">
+            <img src="" alt="meSection">
+            <h1>Box Example</h1>
+            <p>This is a simple box created using HTML and CSS.</p>
+          </div>
+        </div>
+        <div class="boxWork1">
+          <div class="content">
+            <img src="" alt="meSection">
+            <h1>Box Example</h1>
+            <p>This is a simple box created using HTML and CSS.</p>
+          </div>
+        </div>
+      </div>
         <!-- footer -->
         <div class="contentf">
           <h1>Main Content</h1>
@@ -106,6 +147,8 @@
             <button onclick="toggleFooter()">Toggle Footer</button>
           </div>
         </footer>
+
         <script src="script.js"></script>
+        
 </body>
 </html>

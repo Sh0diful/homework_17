@@ -147,7 +147,7 @@ button {
     position: absolute;
     background-image: url("images/swatch_1\ 1.png");
     background-color: #FFF8EA;
-    width: 100%;
+    max-width: 100%;
     left: 0;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -166,10 +166,11 @@ button {
   
     /* CSS for the frame */
     .frame {
-      
-      width: 1100px; /* Adjust width as needed */
-      height: 500px; /* Adjust height as needed */
-      border: solid;  #775e30; /* Border color and thickness */
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      max-width: 1100px; /* Adjust width as needed */
+      /* height: 500px;  */
+      border: 1px solid  #775e30; /* Border color and thickness */
       
       padding: 30px; /* Padding inside the frame */
       margin: 50px auto; /* Center the frame horizontally */
@@ -186,7 +187,7 @@ button {
 
      /* CSS for the image */
   .box img {
-    width: 100%; /* Make the image fill the entire box */
+    max-width: 100%; /* Make the image fill the entire box */
     height: 100%; /* Make the image fill the entire box */
     object-fit: cover; /* Ensure the image covers the entire box */
     position: absolute; /* Position the image relative to the box */
@@ -207,11 +208,11 @@ button {
     }
 
   /* CSS for the content */
-  .content {
-    position: relative; /* Create a new positioning context */
-    z-index: 1; /* Ensure content is above the image */
+  /* .content {
+    position: relative; 
+    z-index: 1;
     padding: 20px;
-  }
+  } */
 
   .content h1 {
     margin-top: 0; /* Remove default margin for h1 */
@@ -219,7 +220,7 @@ button {
 
     /* CSS for the box */
     .box {
-      width: 1100px; /* Adjust width as needed */
+      max-width: 1100px; /* Adjust width as needed */
       height: 500px; /* Adjust height as needed */
       background-color: #FFF8EA; /* Background color of the box */
       border: 2px solid #333; /* Border color and thickness */
@@ -229,15 +230,15 @@ button {
     }
   
     /* CSS for the content inside the box */
-    .content {
+    /* .content {
       font-family: Arial, sans-serif;
       color: #333;
       text-align: left;
-    }
+    } */
   
        /* CSS for the boxwork */
        .boxWork {
-        width: 500px; /* Adjust width as needed */
+        max-width: 500px; /* Adjust width as needed */
         height: 500px; /* Adjust height as needed */
         background-color: #FFF8EA; /* Background color of the box */
         border: 2px solid #333; /* Border color and thickness */
@@ -249,15 +250,20 @@ button {
       }
     
       /* CSS for the content inside the box */
-      .content {
+      /* .content {
         font-family: Arial, sans-serif;
         color: #333;
         text-align: center;
-      }
+      } */
 
       /* CSS for the boxwork */
+      .workProjects {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        }
+
       .boxWork1 {
-        width: 500px; /* Adjust width as needed */
+        max-width: 500px; /* Adjust width as needed */
         height: 500px; /* Adjust height as needed */
         background-color: #FFF8EA; /* Background color of the box */
         border: 2px solid #333; /* Border color and thickness */
@@ -299,3 +305,51 @@ button {
       justify-content: space-between;
       align-items: center;
     }
+
+    .boxs {
+      max-width: 1100px; /* Adjust width as needed */
+      
+      /* height: 100px; Adjust height as needed */
+      background-color: #FFF8EA; /* Background color of the box */
+      border: 2px solid #333; /* Border color and thickness */
+      padding: 20px; /* Padding inside the box */
+      margin: 50px auto; /* Center the box horizontally */
+      box-sizing: border-box; /* Include padding and border in element's total width and height */
+    }
+  
+    /* CSS for the content inside the box */
+    .toggleBackgroundColor {
+      font-family: Arial, sans-serif;
+      color: #cc8484;
+      text-align: right;
+    }
+
+    @media only screen and (min-width: 600px) {
+      /* For tablets: */
+      .col-s-1 {width: 8.33%;}
+      .col-s-2 {width: 16.66%;}
+      .col-s-3 {width: 25%;}
+      .col-s-4 {width: 33.33%;}
+      .col-s-5 {width: 41.66%;}
+      .col-s-6 {width: 50%;}
+      .col-s-7 {width: 58.33%;}
+      .col-s-8 {width: 66.66%;}
+      .col-s-9 {width: 75%;}
+      .col-s-10 {width: 83.33%;}
+      .col-s-11 {width: 91.66%;}
+      .col-s-12 {width: 100%;}
+    }
+    @media only screen and (min-width: 768px) {
+      /* For desktop: */
+      .col-1 {width: 8.33%;}
+      .col-2 {width: 16.66%;}
+      .col-3 {width: 25%;}
+      .col-4 {width: 33.33%;}
+      .col-5 {width: 41.66%;}
+      .col-6 {width: 50%;}
+      .col-7 {width: 58.33%;}
+      .col-8 {width: 66.66%;}
+      .col-9 {width: 75%;}
+      .col-10 {width: 83.33%;}
+      .col-11 {width: 91.66%;}
+      .col-12 {width: 100%;}
